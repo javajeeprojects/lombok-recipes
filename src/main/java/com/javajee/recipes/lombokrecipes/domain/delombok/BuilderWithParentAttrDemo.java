@@ -44,7 +44,8 @@ public class BuilderWithParentAttrDemo extends Parent {
         }
 
         public String toString() {
-            return "BuilderWithParentAttrDemo.BuilderWithParentAttrDemoBuilder(someAttr=" + this.someAttr + ", someOtherAttr=" + this.someOtherAttr + ", parentAttr=" + this.parentAttr + ")";
+            return "BuilderWithParentAttrDemo.BuilderWithParentAttrDemoBuilder(someAttr="
+                    + this.someAttr + ", someOtherAttr=" + this.someOtherAttr + ", parentAttr=" + this.parentAttr + ")";
         }
     }
 }
