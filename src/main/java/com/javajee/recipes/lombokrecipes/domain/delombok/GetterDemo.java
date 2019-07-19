@@ -1,17 +1,14 @@
 package com.javajee.recipes.lombokrecipes.domain.delombok;
 
 public class GetterDemo {
-    String someData;
-    String someOtherData;
+    String someAttr;
+    String someOtherAttr;
 
-    public GetterDemo() {
+    public String getSomeAttr() {
+        return this.someAttr;
     }
 
-    public String getSomeData() {
-        return this.someData;
-    }
-
-    public String getSomeOtherData() {
-        return this.someOtherData;
+    public String getSomeOtherAttr() {
+        return this.someOtherAttr;
     }
 }

@@ -1,26 +1,26 @@
 package com.javajee.recipes.lombokrecipes.domain.delombok;
 
 public class DataDemo {
-    String someData;
-    String someOtherData;
+    String someAttr;
+    String someOtherAttr;
 
     public DataDemo() {
     }
 
-    public String getSomeData() {
-        return this.someData;
+    public String getSomeAttr() {
+        return this.someAttr;
     }
 
-    public String getSomeOtherData() {
-        return this.someOtherData;
+    public String getSomeOtherAttr() {
+        return this.someOtherAttr;
     }
 
-    public void setSomeData(String someData) {
-        this.someData = someData;
+    public void setSomeAttr(String someAttr) {
+        this.someAttr = someAttr;
     }
 
-    public void setSomeOtherData(String someOtherData) {
-        this.someOtherData = someOtherData;
+    public void setSomeOtherAttr(String someOtherAttr) {
+        this.someOtherAttr = someOtherAttr;
     }
 
     public boolean equals(final Object o) {
@@ -28,12 +28,12 @@ public class DataDemo {
         if (!(o instanceof DataDemo)) return false;
         final DataDemo other = (DataDemo) o;
         if (!other.canEqual((Object) this)) return false;
-        final Object this$someData = this.getSomeData();
-        final Object other$someData = other.getSomeData();
-        if (this$someData == null ? other$someData != null : !this$someData.equals(other$someData)) return false;
-        final Object this$someOtherData = this.getSomeOtherData();
-        final Object other$someOtherData = other.getSomeOtherData();
-        if (this$someOtherData == null ? other$someOtherData != null : !this$someOtherData.equals(other$someOtherData))
+        final Object this$someAttr = this.getSomeAttr();
+        final Object other$someAttr = other.getSomeAttr();
+        if (this$someAttr == null ? other$someAttr != null : !this$someAttr.equals(other$someAttr)) return false;
+        final Object this$someOtherAttr = this.getSomeOtherAttr();
+        final Object other$someOtherAttr = other.getSomeOtherAttr();
+        if (this$someOtherAttr == null ? other$someOtherAttr != null : !this$someOtherAttr.equals(other$someOtherAttr))
             return false;
         return true;
     }
@@ -45,14 +45,14 @@ public class DataDemo {
     public int hashCode() {
         final int PRIME = 59;
         int result = 1;
-        final Object $someData = this.getSomeData();
-        result = result * PRIME + ($someData == null ? 43 : $someData.hashCode());
-        final Object $someOtherData = this.getSomeOtherData();
-        result = result * PRIME + ($someOtherData == null ? 43 : $someOtherData.hashCode());
+        final Object $someAttr = this.getSomeAttr();
+        result = result * PRIME + ($someAttr == null ? 43 : $someAttr.hashCode());
+        final Object $someOtherAttr = this.getSomeOtherAttr();
+        result = result * PRIME + ($someOtherAttr == null ? 43 : $someOtherAttr.hashCode());
         return result;
     }
 
     public String toString() {
-        return "DataDemo(someData=" + this.getSomeData() + ", someOtherData=" + this.getSomeOtherData() + ")";
+        return "DataDemo(someAttr=" + this.getSomeAttr() + ", someOtherAttr=" + this.getSomeOtherAttr() + ")";
     }
 }

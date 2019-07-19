@@ -1,12 +1,12 @@
 package com.javajee.recipes.lombokrecipes.domain.delombok;
 
 public class BuilderOverConstructorDemo {
-    String someData;
-    String someOtherData;
+    String someAttr;
+    String someOtherAttr;
 
-    BuilderOverConstructorDemo(String someData) {
-        this.someData = someData;
-        this.someOtherData = "Custom Value";
+    BuilderOverConstructorDemo (String someAttr) {
+        this.someAttr = someAttr;
+        this.someOtherAttr = "Custom Value";
     }
 
     public static BuilderOverConstructorDemoBuilder builder() {
@@ -14,22 +14,22 @@ public class BuilderOverConstructorDemo {
     }
 
     public static class BuilderOverConstructorDemoBuilder {
-        private String someData;
+        private String someAttr;
 
         BuilderOverConstructorDemoBuilder() {
         }
 
-        public BuilderOverConstructorDemoBuilder someData(String someData) {
-            this.someData = someData;
+        public BuilderOverConstructorDemoBuilder someAttr(String someAttr) {
+            this.someAttr = someAttr;
             return this;
         }
 
         public BuilderOverConstructorDemo build() {
-            return new BuilderOverConstructorDemo(someData);
+            return new BuilderOverConstructorDemo(someAttr);
         }
 
         public String toString() {
-            return "BuilderOverConstructorDemo.BuilderOverConstructorDemoBuilder(someData=" + this.someData + ")";
+            return "BuilderOverConstructorDemo.BuilderOverConstructorDemoBuilder(someAttr=" + this.someAttr + ")";
         }
     }
 }

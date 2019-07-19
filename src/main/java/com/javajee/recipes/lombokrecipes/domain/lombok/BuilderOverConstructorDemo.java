@@ -3,13 +3,12 @@ package com.javajee.recipes.lombokrecipes.domain.lombok;
 import lombok.Builder;
 
 public class BuilderOverConstructorDemo {
-    String someData;
-    String someOtherData;
+    String someAttr;
+    String someOtherAttr;
 
     @Builder
-    BuilderOverConstructorDemo (String someData) {
-        this.someData = someData;
-        this.someOtherData = "Custom Value";
+    BuilderOverConstructorDemo (String someAttr) {
+        this.someAttr = someAttr;
+        this.someOtherAttr = "Custom Value";
     }
-
 }

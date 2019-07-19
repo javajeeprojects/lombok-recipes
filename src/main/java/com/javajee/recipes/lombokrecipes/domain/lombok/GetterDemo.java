@@ -4,7 +4,6 @@ import lombok.Getter;
 
 @Getter
 public class GetterDemo {
-    String someData;
-    String someOtherData;
-
+    String someAttr;
+    String someOtherAttr;
 }

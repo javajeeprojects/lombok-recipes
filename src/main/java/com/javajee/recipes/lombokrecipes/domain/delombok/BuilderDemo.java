@@ -1,12 +1,12 @@
 package com.javajee.recipes.lombokrecipes.domain.delombok;
 
 public class BuilderDemo {
-    String someData;
-    String someOtherData;
+    String someAttr;
+    String someOtherAttr;
 
-    BuilderDemo(String someData, String someOtherData) {
-        this.someData = someData;
-        this.someOtherData = someOtherData;
+    BuilderDemo(String someAttr, String someOtherAttr) {
+        this.someAttr = someAttr;
+        this.someOtherAttr = someOtherAttr;
     }
 
     public static BuilderDemoBuilder builder() {
@@ -14,28 +14,28 @@ public class BuilderDemo {
     }
 
     public static class BuilderDemoBuilder {
-        private String someData;
-        private String someOtherData;
+        private String someAttr;
+        private String someOtherAttr;
 
         BuilderDemoBuilder() {
         }
 
-        public BuilderDemoBuilder someData(String someData) {
-            this.someData = someData;
+        public BuilderDemoBuilder someAttr(String someAttr) {
+            this.someAttr = someAttr;
             return this;
         }
 
-        public BuilderDemoBuilder someOtherData(String someOtherData) {
-            this.someOtherData = someOtherData;
+        public BuilderDemoBuilder someOtherAttr(String someOtherAttr) {
+            this.someOtherAttr = someOtherAttr;
             return this;
         }
 
         public BuilderDemo build() {
-            return new BuilderDemo(someData, someOtherData);
+            return new BuilderDemo(someAttr, someOtherAttr);
         }
 
         public String toString() {
-            return "BuilderDemo.BuilderDemoBuilder(someData=" + this.someData + ", someOtherData=" + this.someOtherData + ")";
+            return "BuilderDemo.BuilderDemoBuilder(someAttr=" + this.someAttr + ", someOtherAttr=" + this.someOtherAttr + ")";
         }
     }
 }

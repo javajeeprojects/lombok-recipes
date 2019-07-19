@@ -4,7 +4,6 @@ import lombok.*;
 
 @Data
 public class DataDemo {
-    String someData;
-    String someOtherData;
-
+    String someAttr;
+    String someOtherAttr;
 }
